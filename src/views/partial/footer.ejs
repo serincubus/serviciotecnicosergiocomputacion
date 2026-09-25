@@ -1,0 +1,48 @@
+<footer class="footer">
+  <div class="container footer__container">
+    <a href="/" class="header__logo footer__logo"><span>Sergio Computación</span> y Diseño</a>
+    <p class="footer__copy">&copy; 2026 ByteFix. Todos los derechos reservados.</p>
+    <div class="footer__social">
+      <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+      <a href="#" class="footer__social-link" aria-label="X">X</a>
+      <a href="#" class="footer__social-link" aria-label="Instagram">@</a>
+    </div>
+  </div>
+</footer>
+
+<%- include('whatsapp') %>
+
+<script>
+  // Menú hamburguesa
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+  burger.addEventListener('click', () => {
+    const open = nav.classList.toggle('nav--open');
+    burger.classList.toggle('burger--open', open);
+    burger.setAttribute('aria-expanded', open);
+  });
+
+    // Globo de WhatsApp: cerrar y recordar la decisión hasta que se cierre el navegador
+  const waClose = document.getElementById('whatsappClose');
+  if (waClose) {
+    waClose.addEventListener('click', () => {
+      document.getElementById('whatsappBubble').classList.add('whatsapp-bubble--hidden');
+      sessionStorage.setItem('waBubbleClosed', '1');
+    });
+    if (sessionStorage.getItem('waBubbleClosed')) {
+      document.getElementById('whatsappBubble').classList.add('whatsapp-bubble--hidden');
+    }
+  }
+
+  // Acordeón FAQ
+  document.querySelectorAll('.faq__question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const wasOpen = item.classList.contains('faq__item--open');
+      document.querySelectorAll('.faq__item').forEach(i => i.classList.remove('faq__item--open'));
+      if (!wasOpen) item.classList.add('faq__item--open');
+    });
+  });
+</script>
+</body>
+</html>

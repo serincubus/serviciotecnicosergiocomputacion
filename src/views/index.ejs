@@ -1,0 +1,170 @@
+<%- include('partial/head', { title: 'SergioComputacion' }) %>
+<%- include('partial/header') %>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero__container">
+    <p class="hero__tag">SERVICIO TECNICO Y DISEÑO</p>
+    <h1 class="hero__title">Tu computadora se vuelve mas <span>Potente</span> en nuestras manos!</h1>
+    <div class="hero__cards">
+      <article class="hero-card">
+        <div class="hero-card__icon"><img src="/images/iconos/hardware.png" alt="Hardware"></div>
+        <h3 class="hero-card__title">Hardware</h3>
+        <p class="hero-card__text">Ofrecemos componentes de hardware de última generación para reparar tu equipo o llevar su rendimiento al siguiente nivel.</p>
+      </article>
+      <article class="hero-card">
+        <div class="hero-card__icon"><img src="/images/iconos/software.png" alt="Software"></div>
+        <h3 class="hero-card__title">Software</h3>
+        <p class="hero-card__text">Dejamos tu sistema operativo como nuevo, configurado desde cero y optimizado para darte la máxima velocidad.</p>
+      </article>
+      <article class="hero-card">
+        <div class="hero-card__icon"><img src="/images/iconos/antivirus.png" alt="Antivirus"></div>
+        <h3 class="hero-card__title">Seguridad</h3>
+        <p class="hero-card__text">Protegemos tu equipo y tu información privada contra todo tipo de amenazas digitales.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section">
+  <div class="container about__container">
+    <figure class="about__media">
+      <img src="/images/hero.jpg" alt="Técnico reparando dispositivo" class="about__img">
+    </figure>
+    <div class="about__content">
+      <p class="section__tag">Quienes somos</p>
+      <h2 class="section__title">Tu socio en la restauración de equipos</h2>
+      <p class="section__text">Revive la potencia y velocidad de tus computadoras. Ya sea una lentitud frustrante, una pantalla rota o fallas en el sistema, nuestro equipo de especialistas optimiza, repara y actualiza tus equipos de escritorio y laptops. Diagnosticamos con precisión para devolverte tu herramienta de trabajo como nueva</p>
+      <div class="stats">
+        <div class="stats__item">
+          <span class="stats__number">20+</span>
+          <span class="stats__label">Años De Experiencia</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number">24K</span>
+          <span class="stats__label">clientes satisfechos</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number">100%</span>
+          <span class="stats__label">Satisfacción</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CARRUSEL DE MARCAS -->
+<%- include('partial/marcas') %>
+
+<!-- SERVICES -->
+<section class="services section section--dark">
+  <div class="container">
+    <p class="section__tag">TE OFRECEMOS</p>
+    <h2 class="section__title section__title--center">Servicios de Reparación, Mantenimiento y Venta</h2>
+    <div class="services__grid">
+      <article class="service">
+        <div class="service__icon"><img src="/images/iconos/laptop.png" alt="Laptop"></div>
+        <h3 class="service__title">Laptop y Pc</h3>
+        <p class="service__text">Reparamos tu Notebook (todas las marcas y modelos) y Pc, armados de equipos a medida.</p>
+      </article>
+      <article class="service">
+        <div class="service__icon"><img src="/images/iconos/smartphone.png" alt="pc"></div>
+        <h3 class="service__title">SmartPhones</h3>
+        <p class="service__text">Contamos con reparacion de telefonos celulares (cambios de modulo de pantalla, pin de carga, etc)</p>
+      </article>
+      <article class="service">
+        <div class="service__icon"><img src="/images/iconos/software.png" alt="Software"></div>
+        <h3 class="service__title">Software</h3>
+        <p class="service__text">Instalación de sistemas operativos (Microosoft Windows, Distros de Linux) y aplicaciones(programas de oficina, diseño, programación, etc).</p>
+      </article>
+      <article class="service">
+        <div class="service__icon"><img src="/images/iconos/backup.png" alt="Backup Data"></div>
+        <h3 class="service__title">Backup De Datos</h3>
+        <p class="service__text">No pongas en riesgo tu información valiosa. Protegemos tus fotos, documentos de trabajo, bases de datos y archivos del sistema mediante medios físicos externos o la nube.</p>
+      </article>
+      <article class="service">
+        <div class="service__icon"><img src="/images/iconos/antivirus.png" alt="Antivirus"></div>
+        <h3 class="service__title">Seguridad</h3>
+        <p class="service__text">Analizamos tu sistema a fondo para eliminar virus, malware y software espía, configuración firewalls e instalación de antivirus.</p>
+      </article>
+      <article class="service">
+        <div class="service__icon"><img src="/images/iconos/hardware.png" alt="hardware"></div>
+        <h3 class="service__title">Repuestos de Hardware</h3>
+        <p class="service__text">Utilizamos piezas que devuelven a tu computadora su rendimiento, estabilidad y velocidad original.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container cta__container">
+    <p class="section__tag">SI NECESITAS AYUDA</p>
+    <h2 class="cta__title">Tu consulta nos interesa</h2>
+    <p class="cta__text">No dejes que una falla en tu computadora detenga tu día. Si tu equipo está lento, no enciende o hace ruidos extraños, cuéntanos qué sucede.</p>
+    <a href="/contact" class="btn btn--primary">Consultanos</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq section">
+  <div class="container container--narrow">
+    <p class="section__tag">PREGUNTAS Y RESPUESTAS</p>
+    <h2 class="section__title">FRECUENTES</h2>
+    <div class="faq__list">
+      <div class="faq__item faq__item--open">
+        <button class="faq__question"> ¿Cuánto tiempo tarda la reparación de una computadora o laptop?</button>
+        <div class="faq__answer"><p>El tiempo promedio es de 24 a 48 horas para reparaciones comunes como cambios de pantalla, teclados, formateos o instalación de discos SSD. Si tu equipo requiere una reparación electrónica avanzada en la placa madre o un repuesto especial, te daremos un tiempo estimado al momento del diagnóstico.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">¿Perderé mis archivos al reparar mi equipo?</button>
+        <div class="faq__answer"><p>Tu información está segura con nosotros. Antes de realizar cualquier procedimiento invasivo o formateo de sistema, te notificamos y realizamos un respaldo integral (backup) de todos tus documentos, fotos y archivos importantes en medios seguros.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">¿Trabajan con todas las marcas y modelos?</button>
+        <div class="faq__answer"><p>Sí, reparamos equipos de escritorio (PC) y laptops de todas las marcas líderes del mercado (HP, Lenovo, Dell, Asus, Acer, Apple, entre otras), tanto sistemas operativos Windows como Linux.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">¿Tiene algún costo revisar mi computadora para darme un presupuesto?</button>
+        <div class="faq__answer"><p>El diagnóstico tiene un costo mínimo que cubre las horas de revisión técnica. Sin embargo, si decides realizar la reparación con nosotros, ese monto se bonifica por completo y solo pagas el valor del arreglo.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question">¿Cómo puedo solicitar ayuda o consultar por un problema?</button>
+        <div class="faq__answer"><p> Es muy fácil. Puedes escribirnos directamente a nuestro WhatsApp o completar el formulario de contacto. Un técnico especializado atenderá tu consulta en minutos para guiarte en el proceso.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact section section--gray">
+  <div class="container">
+    <p class="section__tag">en donde estamos &amp; FORMULARIO DE CONTACTO</p>
+    <h2 class="section__title">Contactanos</h2>
+    <div class="contact__container">
+      <div class="contact__info">
+        <div class="contact__office">
+          <h3 class="contact__subtitle">estamos en San Miguel</h3>
+          <p class="contact__line">Provincia de Bs. As.</p>
+          <p class="contact__line">+54 11 5017 8511</p>
+          <p class="contact__line">serviciotecnicopcsergio@gmail.com</p>
+        </div>
+        
+      </div>
+      <form class="form" action="/contact" method="POST">
+        <div class="form__row">
+          <input type="text" name="name" placeholder="Name" class="form__input" required>
+          <input type="text" name="lastname" placeholder="Last Name" class="form__input" required>
+        </div>
+        <div class="form__row">
+          <input type="tel" name="phone" placeholder="Phone" class="form__input" required>
+          <input type="email" name="email" placeholder="Email" class="form__input" required>
+        </div>
+        <textarea name="message" placeholder="Message" class="form__input form__textarea" required></textarea>
+        <button type="submit" class="btn btn--primary">Submit Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<%- include('partial/footer') %>
